@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: 0;
+  border: none;
+  font-family: "Finlandica", sans-serif;
+}
+
+.lightMode {
+  background: #ffffff;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+header .headerConnect {
+  background: #232323;
+  padding: 12px 30px 12px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .headerConnect label {
+  display: inline-block;
+  margin: 2px 20px;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+header .headerConnect label i {
+  margin: 0 6px;
+  display: inline-block;
+}
+
+header .headerDetails {
+  background: #efefef;
+  padding: 50px 0;
+  text-align: center;
+}
+
+header .headerDetails .headerDetailsStoreContainer {
+  display: block;
+  width: 100px;
+  padding: 60px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: #232323;
+  margin: 5px auto;
+  text-align: center;
+}
+
+header .headerDetails .headerDetailsStoreContainer i {
+  font-size: 90px;
+  color: #efefef;
+}
+
+header .headerDetails h4 {
+  font-size: 3rem;
+  margin: 30px auto 6px;
+}
+
+header .headerDetails h4::before {
+  background: #232323;
+  width: 50px;
+  height: 10px;
+  border-radius: 50px;
+  content: "";
+  position: relative;
+  display: block;
+  margin: 2px auto;
+}
+
+main h3 {
+  font-size: 2rem;
+  display: block;
+  margin: 30px auto 6px;
+  text-align: center;
+}
+
+main h3::after {
+  background: #232323;
+  width: 13%;
+  height: 2px;
+  border-radius: 20px;
+  content: "";
+  position: relative;
+  display: block;
+  margin: 2px auto;
+}
+
+main .storeItemsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 12px auto;
+  width: 90%;
+}
+
+main .storeItemsContainer .storeItemContainer {
+  min-width: 30%;
+  padding: 12px;
+  margin: 2px 5px;
+}
+
+main .storeItemsContainer .storeItemContainer .storeItem {
+  width: 100%;
+  height: 200px;
+  background: #efefef;
+  border-radius: 10px;
+  background: #efefef;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px auto;
+}
+
+main .storeItemsContainer .storeItemContainer .storeItem .storeItemImage {
+  width: 100%;
+  height: 200px;
+  background: #efefef no-repeat center;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px auto;
+}
+
+main .storeItemsContainer .storeItemContainer .storeItem .storeItemDetails {
+  background: #efefef;
+  border-radius: 10px;
+  background: #efefef;
+  padding: 12px;
+  margin: 12px auto;
+}
+
+main .storeItemsContainer .storeItemContainer .storeItem .storeItemDetails h4 {
+  font-size: 1.5rem;
+  margin: 5px 3px;
+}
+
+main .storeItemsContainer .storeItemContainer .storeItem .storeItemDetails p {
+  font-size: 1rem;
+  margin: 12px 0;
+}
+
+main
+  .storeItemsContainer
+  .storeItemContainer
+  .storeItem
+  .storeItemDetails
+  .storeItemFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #9191919f;
+}
+
+main
+  .storeItemsContainer
+  .storeItemContainer
+  .storeItem
+  .storeItemDetails
+  .storeItemFooter
+  label {
+  font-size: 0.8rem;
+  margin: 5px 3px;
+  font-weight: 600;
+  color: #919191;
+}
+
+main
+  .storeItemsContainer
+  .storeItemContainer
+  .storeItem
+  .storeItemDetails
+  .storeItemFooter
+  a {
+  font-size: 0.7rem;
+  margin: 5px 3px;
+  color: #919191;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  main .storeItemsContainer {
+    width: 95%;
+  }
+
+  main .storeItemsContainer .storeItemContainer {
+    width: 45%;
+    padding: 12px;
+    margin: 2px 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  header .headerConnect label {
+    margin: 2px 6px;
+    font-size: 0.8rem;
+  }
+
+  header .headerConnect label i {
+    margin: 0 3px;
+  }
+
+  header .headerDetails h4 {
+    font-size: 2.2rem;
+  }
+
+  main .storeItemsContainer {
+    width: 95%;
+  }
+
+  main .storeItemsContainer .storeItemContainer {
+    width: 90%;
+    padding: 12px;
+    margin: 2px 5px;
+  }
+}
