@@ -102,6 +102,24 @@
   color: #121212;
 }
 
+@media (max-width: 1024px) {
+  .treeContainer {
+    width: 60%;
+  }
+
+  .treeHeader {
+    width: 80%;
+  }
+
+  .treeLinks {
+    width: 70%;
+  }
+
+  .treeLinks a {
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .treeContainer {
     width: 100%;
