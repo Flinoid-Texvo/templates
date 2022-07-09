@@ -396,6 +396,17 @@ main
   background: transparent;
 }
 
+.myFooter {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 6px 0;
+  background: #ececec;
+  font-size: 0.7rem;
+  color: #121212;
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
   main .storeItemsContainer {
     width: 95%;
